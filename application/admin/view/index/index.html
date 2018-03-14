@@ -15,7 +15,7 @@
 <body class="gray-bg">
     <div class="text-left"  animated fadeInDown">
         <h2 class="text-left"><strong>欢迎使用讯博网站管理系统</strong></h2>
-        <p class="text-left" margin:0 0 10px>您好!您的身份是:{$rolename}  今天是:
+            <p class="text-left" >您好!您的身份是:<strong>{$rolename}</strong>  今天是:
             <script language="JavaScript" type="text/JavaScript" >
                 var day = "";
                 var month = "";
@@ -45,11 +45,38 @@
                     weekday = " 星期六 ";
                 document.write(year + "年" + mymonth + "月" + myday + "日 " + weekday);
             </script>
-        </p>
+            </p>
 
-			<h3>  </h3> 
-			<h3> homepage : http://baiyf.com </h3>
-			<h3> email : 1902822973@qq.com </h3>
+        <h3 class="text-left"><strong>服务器信息</strong></h3>	
+        <p>服务器ip信息:{$_SERVER['REMOTE_ADDR']}</p>
+        <p>服务器端口:{$_SERVER['SERVER_PORT']}</p>
+        <p>当前服务器操作系统信息:{$_SERVER['HTTP_USER_AGENT']}</p>
+        <h3 class="text-left"><strong>软件信息</strong></h3>
+        <p>PHP版本信息:<?php echo PHP_VERSION;?></p>	
+        <p>MySQL版本信息:5.5.53</p>	
+        <p>{$_SERVER['SERVER_SOFTWARE']}</p>	
+        
+
+        
+        <fieldset style="border:solid 1px #AFC9EA;">
+            <legend>联系讯博</legend>
+            <table width="100%" border="0" align="center" cellpadding="2" cellspacing="0" style="padding-top:3px;">
+                <tr>
+                <td height="20">　后台开发：广州讯博网络科技有限公司</td>
+                </tr>
+                <tr>
+                <td height="20">　总机电话：广州市内：020-61136292  广州市外：4006633949</td>
+                </tr>
+                <tr>
+                <td height="20">　传　　真：转-832&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客服QQ：4006633949</td>
+                </tr>
+                <tr>
+                <td height="20">　公司网址：<a href="http://www.cenbel.com">www.cenbel.com</a>  </td>
+                </tr>
+                <tr><td class="blank_line_5"></td></tr>
+            </table>
+        </fieldset>
+       
     </div>
     <script src="__JS__/jquery.min.js?v=2.1.4"></script>
     <script src="__JS__/bootstrap.min.js?v=3.3.6"></script>

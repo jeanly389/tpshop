@@ -1,28 +1,5 @@
-# snake
-thinkphp5做的通用系统改后台
 
-目前完成的功能有:
 
-后台管理员的增删改查
-
-角色的增删改查
-
-权限的分配
-
-数据库的备份与还原
-
-# QQ交流群
-## 159640205
-
-# 打赏作者  
-支付宝
-![支付宝](http://www.baiyf.com/media/AliPay_200.png)  
-微信
-![微信](http://www.baiyf.com/media/WeixinPay_200.png) 
-
-# 特别感谢  
-*佳鹏 打赏 199.99  
-*路 打赏 50
 
 # 使用方法
 配置好虚拟域名，输入域名，点击下一步安装即可
@@ -336,6 +313,5 @@ $offset = ($param['pageNumber'] - 1) * $limit; // 这次分页从哪个开始
 
 
 
-# 线上预览地址:
-http://snake.baiyf.com
+
 
